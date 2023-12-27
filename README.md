@@ -2,7 +2,7 @@
 <h1>Configuracion de isc-dhcp-server en Debian</h1>
 
 <h2>Instalar isc-dhcp-server<br><br></h2>
-            <pre><strong>sudo apt install isc-dhcp-server</strong></pre><br>
+            <pre><strong>sudo apt install isc-dhcp-server</strong></pre>
 <br>
             <p>Puedes ver el estado del servicio o reiniciarlo en cualquier momento con estos comandos</p>
             <pre><strong>sudo systemctl status isc-dhcp-server</strong></pre>
