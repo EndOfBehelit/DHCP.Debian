@@ -18,7 +18,7 @@ Debemos configurar nuestro Debian como router asignándole la IP .1 de manera es
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/a6a8424b-ab42-4e08-8138-50422951cc64" alt="Configuración de interfaz a usar en servicio DHCP" width="700" height="500px"/> <br><br>
 
 <h2>Configuración de <strong>/etc/dhcp/dhcpd.conf</strong></h2>
-<p>Debemos configurar los en este archivo la subnet en la que usar el DHCP, los host o reservas y las características del servicio como el lease time</p><br><br>
+<p>Debemos configurar los en este archivo la subnet en la que usar el DHCP, los host o reservas y las características del servicio como el lease time</p><br>
 <li>Cabecera del archivo, lease time general, DNSs...</li>
 <pre>
 #Esto permite actualizar los registros de DNS de manera automática, no lo necesitamos
