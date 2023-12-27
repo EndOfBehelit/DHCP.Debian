@@ -64,6 +64,7 @@ Debemos configurar nuestro Debian como router asignándole la IP .1 de manera es
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/64ef19aa-bd97-456a-9ce2-0b5f7e4f30a1" alt="Configuración de interfaz a usar en servicio DHCP" width="700" height="500px"/> <br><br>
 
 <h2>Configuración de una máquina cliente (Windows y Ubuntu) en el servicio de DNS</h2>
+<p>Simplemente deben estar en la misma red los ordenadores, conectados al mismo router</p> 
 <p>Configuración red de Windows</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/fe50dfeb-4dc6-48a4-9f33-91b81d0bed76" alt="Configuración de interfaz a usar en servicio DHCP" width="700" height="500px"/> <br><br>
 <p>Configuración red de Ubuntu</p>
