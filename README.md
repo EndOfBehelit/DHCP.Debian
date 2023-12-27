@@ -13,7 +13,7 @@ Debemos configurar nuestro Debian como router asignándole la IP .1 de manera es
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/b8a57b13-687f-47ca-b004-6a831a6d047b" alt="Configuración estática de interfaces" width="700" height="500px"/> <br><br>
 
-<h2>Configuración de interfaz en <strong>/etc/default/isc-dhcp-server</strong></h2><br>
+<h2>Configuración de interfaz en <strong>/etc/default/isc-dhcp-server</strong></h2>
 <p>En este caso usamos la IPv4 y la interfaz modificada en el paso anterior como router es la "ens192"</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/a6a8424b-ab42-4e08-8138-50422951cc64" alt="Configuración de interfaz a usar en servicio DHCP" width="700" height="500px"/> <br><br>
 
