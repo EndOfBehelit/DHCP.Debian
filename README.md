@@ -17,14 +17,41 @@ Debemos configurar nuestro Debian como router asignándole la IP .1 de manera es
 <p>Debemos configurar los en este archivo la subnet en la que usar el DHCP, los host o reservas y las características del servicio como el lease time</p><br><br>
 <li>Cabecera del archivo, lease time general, DNSs...</li>
 <pre>
-            #Esto permite actualizar los registros de DNS de manera automática, no lo necesitamos
+#Esto permite actualizar los registros de DNS de manera automática, no lo necesitamos
             ddns-update-style none;
-            #Nombre e IP de los dns a usar, el nombre no es obligatorio, con la ip valdría
+#Nombre e IP de los dns a usar, el nombre no es obligatorio, con la ip valdría
             option domain-name "nombre_del_dominio";
             option domain-name-servers ip1 ip2;
-            #Lease time en segundos
+#Lease time en segundos
             default-lease-time 22222;
             max-lease.time 222222;
-            #Authoritative, si el servidor es de nuestra red (obviamente sí), debe ser authoritative
+#Authoritative, si el servidor es de nuestra red (obviamente sí), debe ser authoritative
             authoritative;
+</pre><br>
+<li>Configuración de subred a usar DHCP</li>
+<pre>
+#SUBNET debian, no todas las opciones son obligatorias, pueden usarse las que se necesiten
+#Debe ponerse la red, dirección acabada en .0
+            subnet 192.168.1.0 netmask 255.255.255.0 {
+            #Rango en dentro de la red dada, en la que se usará e servició DHCP
+                        range 192.168.1.1 192.168.1.255;
+            #Router que se usa en la red, en este caso el router el también el que da el servicio DHCP
+                        option routers 192.168.1.1;
+            #Dirección a usar como brodcast
+                        option brodcast-address 192.168.1.255;
+            #Pueden configuirarse DNS o lease time diferentes a los default de la cabecera
+                        option domain-name-servers ip;
+                        max-lease-time 222;
+            }
+</pre>
+<li>Creación de hosts o reservas</li>
+<pre>
+#Reserva de una IP para alguna máquina, pueden configurarse como antes lease time o DNS personalizados para hosts
+            host máquina1 {
+                        hardware ethernet 00:00:00:00:00:00;
+                        fixed-address 192.168.1.10;
+            #Opciones no obligatorias
+                        option domain-name-servers ip;
+                        max-lease-time 22222;
+            }
 </pre>
