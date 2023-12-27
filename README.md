@@ -45,7 +45,7 @@ Debemos configurar nuestro Debian como router asignándole la IP .1 de manera es
                         max-lease-time 222;
             }
 </pre>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/9cda93b6-395f-4e52-b28d-6fc9332a16e4" alt="Configuración de interfaz a usar en servicio DHCP" width="700" height="500px"/></p> <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/EndOfBehelit/DHCP.Debian/assets/154753826/9cda93b6-395f-4e52-b28d-6fc9332a16e4" alt="Configuración de interfaz a usar en servicio DHCP" width="700" height="500px"/><br><br>
 <li>Creación de hosts o reservas</li>
 <pre>
 #Reserva de una IP para alguna máquina, pueden configurarse como antes lease time o DNS personalizados para hosts
