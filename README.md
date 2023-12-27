@@ -2,7 +2,11 @@
 <h1>Configuracion de isc-dhcp-server en Debian</h1>
 
 <h2>Instalar isc-dhcp-server<br><br></h2>
-            <pre><strong>sudo apt install isc-dhcp-server</strong></pre>
+            <pre><strong>sudo apt install isc-dhcp-server</strong></pre><br>
+<br>
+            <p>Puedes ver el estado del servicio o reiniciarlo en cualquier momento con estos comandos</p>
+            <pre><strong>sudo systemctl status isc-dhcp-server</strong></pre>
+            <pre><strong>sudo systemctl restart isc-dhcp-server</strong></pre>
 <br>
 <p>Ahora deberemos hacer ciertas modificaciones en la configuración red, modificando el archivo <strong>/etc/network/interfaces</strong><br>
 Debemos configurar nuestro Debian como router asignándole la IP .1 de manera estática.</p> <br>
